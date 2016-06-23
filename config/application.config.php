@@ -6,7 +6,8 @@ return [
         'Zend\Router',
         'Zend\Validator',
         'Site',
-        'AimWorld', 
+        'AimWorld',
+        'BlessedAlliance',
         'Application'
     ],
     // These are various options for the listeners attached to the ModuleManager

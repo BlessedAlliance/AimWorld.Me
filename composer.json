@@ -14,7 +14,8 @@
     "require": {
         "php": "^5.6 || ^7.0",
         "roave/security-advisories": "dev-master",        
-        "blessed-alliance/aim-world-component": "^1.0 || ^0.3"
+        "blessed-alliance/aim-world-component": "^1.0 || ^0.4",
+        "blessed-alliance/blessed-alliance": "^1.0 || ^0.1"
     },
     "require-dev": {
         "zendframework/zend-component-installer": "^1.0 || ~0.2",
@@ -50,12 +51,14 @@
         "test": "phpunit",
         "install-ui-component": [
             "rm -rf public/assets/aim-world",
+            "rm -rf public/assets/blessed-alliance",
             "rm -rf public/assets/jquery",
             "rm -rf public/assets/jquery-ui",
             "rm -rf public/assets/font-awesome",
             "rm -rf public/assets/bootstrap",
             "bower install",
             "cp -ar bower_components/aim-world-ui-dependencies public/assets/aim-world",
+            "cp -ar bower_components/blessed-alliance-ui-dependencies public/assets/blessed-alliance",
             "cp -ar bower_components/jquery/dist public/assets/jquery",
             "cp -ar bower_components/jquery-ui public/assets/jquery-ui",
             "cp -ar bower_components/components-font-awesome public/assets/font-awesome",
@@ -64,12 +67,14 @@
         ],
         "update-ui-component": [
             "rm -rf public/assets/aim-world",
+            "rm -rf public/assets/blessed-alliance",
             "rm -rf public/assets/jquery",
             "rm -rf public/assets/jquery-ui",
             "rm -rf public/assets/font-awesome",
             "rm -rf public/assets/bootstrap",
             "bower update",
             "cp -ar bower_components/aim-world-ui-dependencies public/assets/aim-world",
+            "cp -ar bower_components/blessed-alliance-ui-dependencies public/assets/blessed-alliance",
             "cp -ar bower_components/jquery/dist public/assets/jquery",
             "cp -ar bower_components/jquery-ui public/assets/jquery-ui",
             "cp -ar bower_components/components-font-awesome public/assets/font-awesome",
