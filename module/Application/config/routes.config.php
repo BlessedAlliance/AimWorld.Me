@@ -10,8 +10,6 @@
  */
 
 use Zend\Router\Http\Literal;
-use Application\Controller;
-
 use AimWorld\Controller\PageController;
 
 return [
@@ -20,7 +18,7 @@ return [
         'options'   => [
             'route'     => '/',
             'defaults'  => [
-                'controller'    => Controller\PageController::class,
+                'controller'    => PageController::class,
                 'action'        => 'index'
             ]
         ]
