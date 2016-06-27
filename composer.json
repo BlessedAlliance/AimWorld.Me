@@ -1,8 +1,4 @@
 {
-    "name": "blessed-alliance/personal-site-skeleton-app",
-    "description": "Initial skeleton application structure",
-    "license": "MIT",
-    "type": "project",
     "homepage": "http://www.aimworld.me/",
     "authors": [
         {
@@ -83,7 +79,7 @@
         ],
         "include-module-config": [
             "cp -au module/Application/config/autoload/app-settings.local.php-dist config/autoload/app-settings.local.php",
-            "cp -au vendor/blessed-alliance/aim-world-component/config/autoload/aim-world.local.php.dist config/autoload/aim-world.local.php"
+            "cp -au module/Application/config/autoload/aim-world.local.php.dist config/autoload/aim-world.local.php"
         ]
     }
 }
