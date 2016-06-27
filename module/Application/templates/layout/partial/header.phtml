@@ -12,7 +12,7 @@
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
         <?php $url = parse_url($this->serverUrl(), PHP_URL_PATH); ?>
-        <li <?php if (false !== strpos($url, '/')) echo 'class="active"' ?>><a href="/">HOME</a></li>
+        <!--<li <?php if (false !== strpos($url, '/')) echo 'class="active"' ?>><a href="/">HOME</a></li>-->
         <li <?php if (false !== strpos($url, '/aim-world')) echo 'class="active"' ?>><a href="/aim-world">ABOUT AIM WORLD</a></li>
         <li <?php if (false !== strpos($url, '/our-team')) echo 'class="active"' ?>><a href="/our-team">JOIN OUR TEAM</a></li>
       </ul>

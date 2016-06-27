@@ -12,6 +12,8 @@
 use Zend\Router\Http\Literal;
 use Application\Controller;
 
+use AimWorld\Controller\PageController;
+
 return [
     'home' => [
         'type'      => Literal::class,
